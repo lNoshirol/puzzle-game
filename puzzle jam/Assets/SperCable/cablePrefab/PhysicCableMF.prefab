@@ -1171,7 +1171,7 @@ GameObject:
   - component: {fileID: 9014530223357614024}
   m_Layer: 6
   m_Name: End
-  m_TagString: Untagged
+  m_TagString: boutDeCable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1453,7 +1453,7 @@ GameObject:
   - component: {fileID: 9014530223618741066}
   m_Layer: 6
   m_Name: Start
-  m_TagString: Untagged
+  m_TagString: boutDeCable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1659,7 +1659,7 @@ GameObject:
   - component: {fileID: 4880384675535236095}
   m_Layer: 6
   m_Name: PhysicCableMF
-  m_TagString: Untagged
+  m_TagString: cable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1735,7 +1735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7bc98c16defe254589ee5dc34dd962f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  connector:
+  connectorList:
   - {fileID: 9014530223618741068}
   - {fileID: 9014530223357614029}
 --- !u!1001 &5188342913243022364
