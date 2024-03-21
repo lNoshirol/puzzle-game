@@ -8,7 +8,12 @@ public class GivePowerForPrise : MonoBehaviour
 {
     private void Update()
     {
-        GetComponent<Powered>().isPowered = false;
+        if (GetComponent<Connector>().ConnectedTo == null)
+        {
+            GetComponent<Powered>().isPowered = false;
+        }
+
+        
 
         if (GetComponent<Connector>().ConnectedTo != null)
         {
