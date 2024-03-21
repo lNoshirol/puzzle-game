@@ -6,6 +6,7 @@ using UnityEngine;
 public class GivePower : MonoBehaviour
 {
     public List<GameObject> connectorList;
+    public bool isConnectedToPowerSource;
     private void Start()
     {
     }
@@ -15,6 +16,8 @@ public class GivePower : MonoBehaviour
     {
         foreach (GameObject connector in connectorList)
         {
+
+
             if (connector.GetComponent<Connector>().ConnectedTo != null && connector.GetComponent<Connector>().ConnectedTo.gameObject.GetComponentInParent<Powered>().isPowered)
             {
                 if (connector.tag == "boutDeCable")

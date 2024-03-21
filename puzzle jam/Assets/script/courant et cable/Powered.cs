@@ -5,4 +5,5 @@ using UnityEngine;
 public class Powered : MonoBehaviour
 {
     public bool isPowered = false;
+    public bool isPowerSource = false;
 }

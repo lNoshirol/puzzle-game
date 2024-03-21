@@ -13,6 +13,11 @@ public class colliderDetector : MonoBehaviour
         {
             ApplyPowerForOtherObject(true);
         }
+        else
+        {
+            ApplyPowerForOtherObject(false);
+        }
+        CheckIfPoweredCableTouchTheWater();
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -20,14 +25,12 @@ public class colliderDetector : MonoBehaviour
         if (collision.gameObject.tag == "cable"|| collision.gameObject.tag == "boutDeCable")
         {
             listOfWhatCollidWithFlaque.Add(collision.gameObject);
-            CheckIfPoweredCableTouchTheWater();
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
         listOfWhatCollidWithFlaque.Remove(collision.gameObject);
-        CheckIfPoweredCableTouchTheWater();
     }
 
     private void OnCollisionStay(Collision collision)
@@ -39,13 +42,15 @@ public class colliderDetector : MonoBehaviour
     {
         foreach (GameObject obj in listOfWhatCollidWithFlaque)
         {
-            if (obj.GetComponentInParent<Powered>())
+            if (obj.GetComponentInParent<Powered>().isPowered)
             {
                 GetComponent<Powered>().isPowered = true;
-                ApplyPowerForOtherObject(false);
                 break;
             }
-            ApplyPowerForOtherObject(false);
+            else
+            {
+                GetComponent<Powered>().isPowered = false;
+            }
         }
     }
 
