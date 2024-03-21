@@ -9,15 +9,23 @@ public class colliderDetector : MonoBehaviour
 
     private void Update()
     {
-        if (GetComponent<Powered>().isPowered)
+        CheckIfPoweredCableTouchTheWater();
+
+        if (listOfWhatCollidWithFlaque.Count == 0)
         {
-            ApplyPowerForOtherObject(true);
+            GetComponent<Powered>().isPowered = false;
         }
-        else
+
+        if (!GetComponent<Powered>().isPowered || listOfWhatCollidWithFlaque.Count == 0)
         {
             ApplyPowerForOtherObject(false);
         }
-        CheckIfPoweredCableTouchTheWater();
+        else if (GetComponent<Powered>().isPowered)
+        {
+            ApplyPowerForOtherObject(true);
+        }
+
+        
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -42,7 +50,11 @@ public class colliderDetector : MonoBehaviour
     {
         foreach (GameObject obj in listOfWhatCollidWithFlaque)
         {
-            if (obj.GetComponentInParent<Powered>().isPowered)
+            if (listOfWhatCollidWithFlaque.Count == 0)
+            {
+                GetComponent<Powered>().isPowered = false;
+            }
+            else if (obj.GetComponentInParent<Powered>().isPowered)
             {
                 GetComponent<Powered>().isPowered = true;
                 break;
