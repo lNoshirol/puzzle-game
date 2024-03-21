@@ -35,7 +35,10 @@ public class GivePower : MonoBehaviour
                 }
             }
 
-            //foreach ()
+            if (!GetComponentInParent<Powered>().isPowered)
+            {
+                
+            }
             gameObject.GetComponent<Powered>().isPowered = false;
         }
     }
