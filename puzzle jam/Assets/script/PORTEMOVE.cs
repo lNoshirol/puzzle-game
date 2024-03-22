@@ -15,7 +15,6 @@ public class PORTEMOVE : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("update");
         if (transform.position.y < 0)
         {
             //Debug.Log("TA MERE 1");
