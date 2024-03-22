@@ -17,27 +17,6 @@ public class GivePower : MonoBehaviour
         foreach (GameObject connector in connectorList)
         {
 
-
-            if (connector.GetComponent<Connector>().ConnectedTo != null && connector.GetComponent<Connector>().ConnectedTo.gameObject.GetComponentInParent<Powered>().isPowered)
-            {
-                if (connector.tag == "boutDeCable")
-                {
-                    if (connector.GetComponent<Connector>().ConnectedTo.gameObject.GetComponentInParent<Powered>().isPowered)
-                    {
-                        gameObject.GetComponent<Powered>().isPowered = true;
-                        break;
-                    }
-                }
-                else if (connector.tag == "prise")
-                {
-                    if (connector.GetComponent<Connector>().ConnectedTo.gameObject.GetComponent<Powered>().isPowered)
-                    {
-                        gameObject.GetComponent<Powered>().isPowered = true;
-                        break;
-                    }
-                }
-            }
-
             if (REPARE(connector))
             {
                 gameObject.GetComponent<Powered>().isPowered = false;
@@ -45,9 +24,30 @@ public class GivePower : MonoBehaviour
             }
             else
             {
+                if (connector.GetComponent<Connector>().ConnectedTo != null && connector.GetComponent<Connector>().ConnectedTo.gameObject.GetComponentInParent<Powered>().isPowered)
+                {
+                    if (connector.tag == "boutDeCable")
+                    {
+                        if (connector.GetComponent<Connector>().ConnectedTo.gameObject.GetComponentInParent<Powered>().isPowered)
+                        {
+                            gameObject.GetComponent<Powered>().isPowered = true;
+                            break;
+                        }
+                    }
+                    else if (connector.tag == "prise")
+                    {
+                        if (connector.GetComponent<Connector>().ConnectedTo.gameObject.GetComponent<Powered>().isPowered)
+                        {
+                            gameObject.GetComponent<Powered>().isPowered = true;
+                            break;
+                        }
+                    }
+                }
                 gameObject.GetComponent<Powered>().isPowered = false;
-                break;
+
             }
+
+
 
             
         }
