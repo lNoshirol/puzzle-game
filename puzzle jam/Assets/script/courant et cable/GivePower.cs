@@ -38,11 +38,11 @@ public class GivePower : MonoBehaviour
                 }
             }
 
-            if (REPARE(connector))
-            {
+            //if (REPARE(connector))
+           // {
                 gameObject.GetComponent<Powered>().isPowered = false;
                 break;
-            }
+           // }
 
             gameObject.GetComponent<Powered>().isPowered = false;
         }
