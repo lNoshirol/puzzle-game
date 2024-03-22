@@ -9778,6 +9778,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ad4584590754845ad9e135dca02be2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &896679519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896679509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e4922af37148643a38a0f760a1d1da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightList:
+  - {fileID: 686350702}
+  - {fileID: 929891846}
+  - {fileID: 2088896084}
 --- !u!64 &897081808
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15403,6 +15419,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3704292238334986570, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 896679518}
+    - targetCorrespondingSourceObject: {fileID: 3704292238334986570, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 896679519}
   m_SourcePrefab: {fileID: 100100000, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
 --- !u!1001 &1338051096
 PrefabInstance:
