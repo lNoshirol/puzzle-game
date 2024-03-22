@@ -7,6 +7,7 @@ public class GivePower : MonoBehaviour
 {
     public List<GameObject> connectorList;
     public bool isConnectedToPowerSource;
+    public bool nsmFlaqueOuPasFlaque;
     private void Start()
     {
     }
@@ -14,6 +15,32 @@ public class GivePower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        /*if (connectorList[0].GetComponent<Connector>().ConnectedTo != null)
+        {
+            if (GetComponent<Powered>().isPowered || connectorList[0].GetComponent<Connector>().ConnectedTo.GetComponentInParent<Powered>().isPowered)
+            {
+                GetComponent<Powered>().isPowered = true;
+            }
+        }
+        else if (connectorList[1].GetComponent<Connector>().ConnectedTo != null)
+        {
+            if (GetComponent<Powered>().isPowered || connectorList[1].GetComponent<Connector>().ConnectedTo.GetComponentInParent<Powered>().isPowered)
+            {
+                GetComponent<Powered>().isPowered = true;
+            }
+        }
+        else
+        {
+            GetComponent<Powered>().isPowered = false;
+        }*/
+
+        
+
+
+
+
+
         foreach (GameObject connector in connectorList)
         {
 
@@ -55,14 +82,22 @@ public class GivePower : MonoBehaviour
 
     public bool REPARE(GameObject TROUVE)
     {
-        foreach(GameObject boutDeCable in FindAnyObjectByType<colliderDetector>().listOfWhatCollidWithFlaque)
+        if (nsmFlaqueOuPasFlaque)
         {
-            if (TROUVE == boutDeCable)
+            foreach (GameObject boutDeCable in FindAnyObjectByType<colliderDetector>().listOfWhatCollidWithFlaque)
             {
-                return true;
+                if (TROUVE == boutDeCable)
+                {
+                    return true;
+                }
             }
+            return false;
         }
-        return false;
+        else
+        {
+            return false;
+        }
+
     }
 
 }

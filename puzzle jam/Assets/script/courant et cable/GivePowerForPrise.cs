@@ -15,7 +15,6 @@ public class GivePowerForPrise : MonoBehaviour
             GetComponent<Powered>().isPowered = false;
         }
 
-        
 
         if (GetComponent<Connector>().ConnectedTo != null)
         {

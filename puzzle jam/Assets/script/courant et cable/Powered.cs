@@ -10,9 +10,11 @@ public class Powered : MonoBehaviour
 
     private void Update()
     {
+
         if (isPowerSource)
         {
             isPowered = true;
         }
+
     }
 }
