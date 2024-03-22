@@ -1360,7 +1360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.89
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1368,31 +1368,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5070832
+      value: 0.504867
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.5070832
+      value: 0.5092896
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.49281508
+      value: 0.49066132
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.49281508
+      value: -0.49495944
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 90
+      value: 90.5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 88.364
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: -88.365
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 5675be1dd665da143ad85e7e6c6c3909, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1793,7 +1793,7 @@ GameObject:
   - component: {fileID: 1870107119}
   - component: {fileID: 1870107118}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: flaque
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1832,7 +1832,7 @@ Transform:
   m_GameObject: {fileID: 1870107117}
   serializedVersion: 2
   m_LocalRotation: {x: -0.4916219, y: -0.5082401, z: -0.50824, w: 0.4916219}
-  m_LocalPosition: {x: -1.16, y: 0.39, z: -1}
+  m_LocalPosition: {x: -1.16, y: 0.7, z: -1}
   m_LocalScale: {x: 17.82936, y: 17.82936, z: 17.82936}
   m_ConstrainProportionsScale: 0
   m_Children: []
