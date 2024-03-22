@@ -135,6 +135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPowered: 0
+  isPowerSource: 0
+  isConnectToSource: 0
 --- !u!1 &3704292238373490081
 GameObject:
   m_ObjectHideFlags: 0
