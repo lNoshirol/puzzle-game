@@ -1928,6 +1928,14 @@ PrefabInstance:
       propertyPath: isPowered
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -2735550470559109274, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
+      propertyPath: isPowerSource
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2735550470559109274, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
+      propertyPath: isConnectToSource
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3704292238334986570, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
       propertyPath: m_Name
       value: CableContactFemale
@@ -3100,6 +3108,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPowered: 0
   isPowerSource: 0
+  isConnectToSource: 0
 --- !u!1 &939488979 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8794881952248695738, guid: 907edbdf3851946449c49b9692b9aff2, type: 3}
