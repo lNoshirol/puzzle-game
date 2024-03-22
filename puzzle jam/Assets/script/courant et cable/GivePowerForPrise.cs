@@ -8,6 +8,8 @@ public class GivePowerForPrise : MonoBehaviour
 {
     private void Update()
     {
+        Debug.Log(GetComponent<Connector>().ConnectedTo.GetComponentInParent<Powered>().gameObject.name + " " + GetComponent<Connector>().ConnectedTo.GetComponentInParent<Powered>().isPowered);
+
         if (GetComponent<Connector>().ConnectedTo == null)
         {
             GetComponent<Powered>().isPowered = false;

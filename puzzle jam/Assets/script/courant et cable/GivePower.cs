@@ -38,12 +38,26 @@ public class GivePower : MonoBehaviour
                 }
             }
 
-            if (!GetComponentInParent<Powered>().isPowered)
+            if (REPARE(connector))
             {
-                
+                gameObject.GetComponent<Powered>().isPowered = false;
+                break;
             }
+
             gameObject.GetComponent<Powered>().isPowered = false;
         }
+    }
+
+    public bool REPARE(GameObject TROUVE)
+    {
+        foreach(GameObject boutDeCable in FindAnyObjectByType<colliderDetector>().listOfWhatCollidWithFlaque)
+        {
+            if (TROUVE == boutDeCable)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
 }
