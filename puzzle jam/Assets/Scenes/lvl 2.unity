@@ -812,6 +812,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3704292238334986570, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 103324088}
+    - targetCorrespondingSourceObject: {fileID: 3704292238334986570, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 103324091}
   m_SourcePrefab: {fileID: 100100000, guid: 29e68962e221f9b45aacdfcabbbb717d, type: 3}
 --- !u!1 &103324087 stripped
 GameObject:
@@ -858,6 +861,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 131cc718a314f744a872179c909a5e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &103324091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 103324087}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7e4922af37148643a38a0f760a1d1da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightList:
+  - {fileID: 1841055024}
+  - {fileID: 688563183}
+  - {fileID: 1262258805}
 --- !u!64 &104026080
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -8528,6 +8547,7 @@ GameObject:
   - component: {fileID: 616107162}
   - component: {fileID: 616107161}
   - component: {fileID: 616107160}
+  - component: {fileID: 616107164}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -8621,6 +8641,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &616107164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616107159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7430a8facb379b3478cc97f722709ee9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LASCENE: lvl 3
 --- !u!64 &629708124
 MeshCollider:
   m_ObjectHideFlags: 0

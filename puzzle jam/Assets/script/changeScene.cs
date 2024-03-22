@@ -10,4 +10,14 @@ public class changeScene : MonoBehaviour
     {
         SceneManager.LoadScene(LASCENE);
     }
+
+    public void OnClick()
+    {
+        SceneManager.LoadScene(LASCENE);
+    }
+
+    public void OnClick2()
+    {
+        Application.Quit();
+    }
 }
