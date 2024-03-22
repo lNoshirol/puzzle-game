@@ -43,8 +43,13 @@ public class GivePower : MonoBehaviour
                 gameObject.GetComponent<Powered>().isPowered = false;
                 break;
             }
+            else
+            {
+                gameObject.GetComponent<Powered>().isPowered = false;
+                break;
+            }
 
-            gameObject.GetComponent<Powered>().isPowered = false;
+            
         }
     }
 
