@@ -6,4 +6,5 @@ public class Powered : MonoBehaviour
 {
     public bool isPowered = false;
     public bool isPowerSource = false;
+    public bool isConnectToSource = false;
 }
